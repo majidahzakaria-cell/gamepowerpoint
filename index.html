@@ -113,8 +113,16 @@ border:none;
 
 <script>
 
+    function openGame(url){
+    const frame = document.getElementById("gameFrame");
+    const welcome = document.getElementById("welcomeMessage");
+
+    welcome.style.display = "none";
+    frame.style.display = "block";
+    frame.src = url;
+}
 function game1(){
-document.getElementById("gameFrame").src="https://1drv.ms/p/c/4d536dbe3267eb7c/IQSfUDqzVQhUR6i9pRONfBpbAYI36Y6uoKxV2JWphqTV4JE?em=2";
+openGame("https://1drv.ms/p/c/4d536dbe3267eb7c/IQSfUDqzVQhUR6i9pRONfBpbAYI36Y6uoKxV2JWphqTV4JE?em=2");
 }
 
 function game2(){
@@ -126,10 +134,6 @@ document.getElementById("gameFrame").src="https://1drv.ms/p/c/4d536dbe3267eb7c/I
 }
 
 function game4(){
-document.getElementById("gameFrame").src="https://1drv.ms/p/c/4d536dbe3267eb7c/IQSs6Tsl6mehSLNq5mK_7JglAVNU2NitiqzJB_sFCRFsaws?em=2";
-}
-
-  function game4(){
 document.getElementById("gameFrame").src="https://1drv.ms/p/c/4d536dbe3267eb7c/IQSs6Tsl6mehSLNq5mK_7JglAVNU2NitiqzJB_sFCRFsaws?em=2";
 }
 
